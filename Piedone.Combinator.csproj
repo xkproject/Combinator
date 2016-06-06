@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -14,7 +14,8 @@
     <AssemblyName>Piedone.Combinator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews Condition=" '$(BuildViews)' == 'true' ">true</MvcBuildViews>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
@@ -106,19 +107,19 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="IronRuby, Version=1.1.3.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\IronRuby.1.1.3\lib\IronRuby.dll</HintPath>
+      <HintPath>Libs\IronRuby.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="IronRuby.Libraries, Version=1.1.3.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\IronRuby.1.1.3\lib\IronRuby.Libraries.dll</HintPath>
+      <HintPath>Libs\IronRuby.Libraries.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\IronRuby.1.1.3\lib\Microsoft.Dynamic.dll</HintPath>
+      <HintPath>Libs\Microsoft.Dynamic.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\IronRuby.1.1.3\lib\Microsoft.Scripting.dll</HintPath>
+      <HintPath>Libs\Microsoft.Scripting.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
@@ -199,21 +200,21 @@
     <Content Include="Placement.info" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
+    <ProjectReference Include="..\..\..\..\Orchard\Orchard.Framework.csproj">
       <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
       <Name>Orchard.Framework</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\Core\Orchard.Core.csproj">
+    <ProjectReference Include="..\..\..\Core\Orchard.Core.csproj">
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\Piedone.HelpfulLibraries\Piedone.HelpfulLibraries.csproj">
+    <ProjectReference Include="..\Piedone.Helpful-Libraries\Piedone.HelpfulLibraries.csproj">
       <Project>{ea61ad10-39d6-41a9-b12b-227f50c54158}</Project>
       <Name>Piedone.HelpfulLibraries</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Upgrade\Upgrade.csproj">
+    <ProjectReference Include="..\..\..\Modules\Upgrade\Upgrade.csproj">
       <Project>{8a9fdb57-342d-49c2-bafc-d885aae5cc7c}</Project>
       <Name>Upgrade</Name>
     </ProjectReference>
@@ -258,7 +259,8 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4466</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl></IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>True</UseCustomServer>
           <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
